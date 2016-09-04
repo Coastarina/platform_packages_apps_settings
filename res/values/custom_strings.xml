@@ -215,4 +215,8 @@
     <string name="status_bar_battery_percent_title">Battery percent</string>
     <string name="status_bar_battery_percent_summary">Display percent in battery drawable</string>
 
+    <!-- Device info settings -->
+    <string name="cpu_info">CPU</string>
+    <string name="mem_info">Memory</string>
+
 </resources>
