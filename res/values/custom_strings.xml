@@ -256,4 +256,7 @@
     <!-- Superuser header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="superuser_title">Superuser</string>
 
+    <!-- Substratum dashboard -->
+    <string name="substratum_title">Substratum</string>
+
 </resources>
