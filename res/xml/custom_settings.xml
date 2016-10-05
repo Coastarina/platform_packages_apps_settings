@@ -104,6 +104,11 @@
             android:summary="@string/double_tap_sleep_nav_bar_summary"
             android:defaultValue="false" />
 
+        <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="overview_nav_bar_gesture"
+            android:title="@string/overview_nav_bar_gesture"
+            android:summary="@string/overview_nav_bar_gesture_desc" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -135,6 +140,11 @@
 
     <PreferenceCategory
         android:title="@string/misc_title">
+
+        <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="qs_show_brightness"
+            android:title="@string/show_brightness"
+            android:defaultValue="true" />
 
         <PreferenceScreen
             android:key="systemui_tuner_other"
