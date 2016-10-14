@@ -259,4 +259,10 @@
     <!-- Substratum dashboard -->
     <string name="substratum_title">Substratum</string>
 
+    <!-- Lockscreen items clock, date, alarm text -->
+    <string name="lockscreen_items_settings_title">Lockscreen Items</string>
+    <string name="lockscreen_clock_title">Lockscreen clock</string>
+    <string name="lockscreen_date_title">Lockscreen date</string>
+    <string name="lockscreen_alarm_title">Lockscreen alarm text</string>
+
 </resources>
