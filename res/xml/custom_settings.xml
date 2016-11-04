@@ -142,6 +142,17 @@
         android:title="@string/quick_settings_title">
 
         <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="qs_show_brightness"
+            android:title="@string/show_brightness"
+            android:defaultValue="true" />
+
+        <com.android.settings.preference.SecureSettingSwitchPreference
+            android:key="qs_bt_easy_toggle"
+            android:title="@string/qs_bt_easy_toggle_title"
+            android:summary="@string/qs_bt_easy_toggle_summary"
+            android:defaultValue="false" />
+
+        <com.android.settings.preference.SecureSettingSwitchPreference
             android:key="qs_data_advanced"
             android:title="@string/qs_advanced_data_title"
             android:summary="@string/qs_advanced_data_summary"
@@ -152,17 +163,6 @@
             android:title="@string/qs_wifi_easy_toggle_title"
             android:summary="@string/qs_wifi_easy_toggle_summary"
             android:defaultValue="false" />
-
-        <com.android.settings.preference.SecureSettingSwitchPreference
-            android:key="qs_bt_easy_toggle"
-            android:title="@string/qs_bt_easy_toggle_title"
-            android:summary="@string/qs_bt_easy_toggle_summary"
-            android:defaultValue="false" />
-
-        <com.android.settings.preference.SecureSettingSwitchPreference
-            android:key="qs_show_brightness"
-            android:title="@string/show_brightness"
-            android:defaultValue="true" />
 
     </PreferenceCategory>
 
