@@ -116,10 +116,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String ROTATION_ANGLE_180 = "180";
     private static final String ROTATION_ANGLE_270 = "270";
 
-    private PreferenceCategory mLedsCategory;
-    private Preference mChargingLeds;
-    private Preference mNotificationLeds;
-
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
         @Override
@@ -140,25 +136,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         final ContentResolver resolver = activity.getContentResolver();
 
         addPreferencesFromResource(R.xml.display_settings);
-
-        PreferenceScreen prefSet = getPreferenceScreen();
-
-        mLedsCategory = (PreferenceCategory) findPreference("leds");
-        mChargingLeds = (Preference) findPreference("charging_light");
-        mNotificationLeds = (Preference) findPreference("notification_light");
-        if (mChargingLeds != null
-                && !getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveBatteryLed)) {
-            mLedsCategory.removePreference(mChargingLeds);
-        }
-        if (mNotificationLeds != null
-                && !getResources().getBoolean(
-                        com.android.internal.R.bool.config_intrusiveNotificationLed)) {
-            mLedsCategory.removePreference(mNotificationLeds);
-        }
-        if (mChargingLeds == null && mNotificationLeds == null) {
-            getPreferenceScreen().removePreference(mLedsCategory);
-        }
 
         mScreenSaverPreference = findPreference(KEY_SCREEN_SAVER);
         if (mScreenSaverPreference != null
